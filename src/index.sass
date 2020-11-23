@@ -1,0 +1,274 @@
+* 
+  margin: 0
+  padding: 0
+  text-decoration: none !important
+body 
+  margin: 0
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+code 
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
+
+.header
+  height: 60px
+  display: flex
+  align-items: center
+  background-color: #131921
+  position: sticky
+  top: 0
+  z-index: 100
+
+.header_logo
+  width: 100px
+  object-fit: contain
+  margin: 20px
+  margin-top: 20px
+
+.header_search
+  display: flex
+  flex: 1
+  align-items: center
+  border-radius: 24px
+
+.header_searchInput
+  height: 12px
+  padding: 10px
+  border: none
+  width: 100%
+
+.header_searchIcon 
+  padding: 5px
+  height: 22px !important
+  background-color: #cd9042
+
+.header_optionLineOne
+  font-size: 10px
+
+.header_optionLineTwo
+  font-size: 13px
+  font-weight: 800
+
+.header_optionBasket
+  display: flex
+  align-items: center
+  color: white
+
+.header_basketCount 
+  margin-left: 10px
+  margin-right: 10px
+
+.header_nav
+  display: flex
+  justify-content: space-evenly
+
+.header_option
+  display: flex
+  flex-direction: column
+  margin-left: 10px
+  margin-right: 10px
+  color: white
+
+.home
+  display: flex
+  justify-content: center
+  margin-left: auto
+  margin-right: auto
+  max-width: 1500px
+
+.home_image
+  width: 100%
+  z-index: -1
+  margin-bottom: -150px
+  mask-image: linear-gradient(to bottom, rgba(0,0 ,0 ,1 ), rgba(0, 0, 0, 0))
+
+.product
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: flex-end
+  margin: 10px
+  padding: 20px
+  width: 100%
+  max-height: 400px
+  min-width: 100px
+  background-color: white
+  z-index: 1
+
+.product_rating 
+  display: flex
+
+.product 
+  img
+    max-height: 200px
+    width: 100%
+    object-fit: contain
+    margin-bottom: 15px
+
+.product
+  button 
+    background: #f0c14b
+    border: 1px solid
+    margin-top: 10px
+    border-color: #a88734 #9c7e31 #846a29
+    color: #111
+
+.product_price 
+  margin-top: 5px
+
+.product_info
+  height: 100px
+  margin-bottom: 15px
+
+.home_row
+  display: flex
+  z-index: 1
+  margin-left: 5px
+  margin-right: 5px
+
+.login 
+  background-color: white
+  height: 100vh
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.login_logo
+  margin-top: 20px
+  margin-bottom: 20px
+  object-fit: contain
+  width: 100px
+  margin-right: auto
+  margin-left: auto
+
+.login_container
+  width: 300px
+  height: fit-content
+  display: flex
+  flex-direction: column
+  border-radius: 5px
+  border: 1px solid lightgray;
+  padding: 20px
+  h1 
+    font-weight: 500
+    margin-bottom: 20px
+  p 
+    margin-top: 15px
+    font-size: 12px
+  form 
+    h5 
+      margin-bottom: 5px
+    input
+      height: 30px
+      margin-bottom: 10px
+      background-color: white
+      width: 98%
+
+.login_signInButton
+  background: #f0c14b
+  border-radius: 2px
+  width: 100px
+  height: 30px
+  border: 1px solid
+  margin-top: 10px
+  border-color: #a88734 #9c7e31 #846a29
+
+.login_registerButton
+  border-radius: 2px
+  width: 100%
+  height: 30px
+  border: 1px solid
+  margin-top: 10px
+  border-color: darkgray
+
+.checkoutProduct
+  display: flex
+  margin-top: 20px
+  margin-bottom: 20px
+
+.checkoutProduct_info
+  padding-left: 20px
+  button
+    background: #f0c14b
+    border: 1px solid
+    margin-top: 10px
+    border-color: #a88734 #9c7e31 #846a29
+    color: #111
+
+.checkoutProduct_image
+  object-fit: contain
+  width: 180px
+  height: 180px
+
+.checkoutProduct_rating
+  display: flex
+
+.checkoutProduct_title
+  font-size: 17px
+  font-weight: 800
+
+.subtotal
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  width: 300px
+  height: 100px
+  padding: 20px
+  background-color: #f3f3f3
+  border: 1px solid #dddddd
+  border-radius: 3px
+  button
+    background: #f0c14b
+    border-radius: 2px
+    width: 100%
+    height: 30px
+    border: 1px solid
+    margin-top: 10px
+    border-color: #a88734 #9c7e31 #846a29
+    color: #111
+
+.subtotal_gift
+  display: flex
+  align-items: center
+  input
+    margin-right: 5px
+
+.checkout
+  display: flex
+  padding: 20px
+  background-color: white
+  height: max-content
+
+.checkout_ad
+  width: 100%
+  margin-bottom: 10px
+
+.checkout_title
+  margin-right: 10px
+  padding: 10px
+  border-bottom: 1px solid lightgray
+
+.payment 
+  background-color: white
+
+.payment_container
+  h1
+    text-align: center
+    padding: 10px
+    font-weight: 400
+    background-color: rgb(234, 237, 237)
+    border-bottom: 1px solid lightgray
+
+.payment_section
+  display: flex
+  padding: 20px
+  margin: 0 20px
+  border-bottom: 1px solid lightgray
+
+.payment_title
+  flex: 0.2
+
+.payment_address, .payment_items, .payment_details
+  flex: 0.8
+
