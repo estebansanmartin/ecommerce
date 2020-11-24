@@ -122,8 +122,10 @@ function Payment() {
                     </div>
                     <div className="payment_details">
                         {/*Stripe */}
+
                         <form onSubmit={handleSubmit}>
                             <CardElement onChange={handleChange}/>
+
                             <div className="payment_priceContainer">
                             <CurrencyFormat
                                     renderText={(value) => (
@@ -135,7 +137,8 @@ function Payment() {
                                     thousandSeparator={true}
                                     prefix={"€"}
                                 />
-                                <button disabled={processing || disabled || succeeded}>
+                                <button disabled={processing || disabled || 
+                                succeeded}>
                                         <span>{processing ? <p>Processing</p> :
                                         "Paga Adesso"}</span>
                                 </button>
@@ -143,6 +146,7 @@ function Payment() {
                             {/* Error */}
                             {error && <div>{error}</div>}
                         </form>
+
                     </div>
                 </div>
 
